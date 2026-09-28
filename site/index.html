@@ -1,0 +1,64 @@
+<!doctype html><html lang="en" dir="ltr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Marko & Merna · 06 · 10 · 2026</title><meta name="theme-color" content="#2E4636">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Amiri:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+
+<div id="envelope" class="env">
+  <div class="card-behind"><span class="script" data-t="names"></span></div>
+  <div class="panel l"></div><div class="panel r"></div><div class="env-frame"></div>
+  <div class="env-ui"><p class="script mono" data-t="mono"></p><div class="band"></div><svg class="bow" viewBox="0 0 200 110"><defs><linearGradient id="sat" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F1F4F1"/><stop offset=".5" stop-color="#B9C6BA"/><stop offset="1" stop-color="#E6EBE6"/></linearGradient></defs><g fill="url(#sat)" stroke="#8FA88F" stroke-width=".6"><path d="M100 55C70 0 10 5 8 40c-2 32 60 24 92 15Z"/><path d="M100 55C130 0 190 5 192 40c2 32-60 24-92 15Z"/><path d="M96 60 60 108l22-4 14-28ZM104 60l36 48-22-4-14-28Z"/><rect x="86" y="42" width="28" height="26" rx="5"/></g></svg>
+    <div class="env-foot"><p class="script" data-t="names"></p><p class="eyebrow pulse" data-t="tap"></p></div></div>
+  <button id="openBtn" data-aria="openAria"></button>
+</div>
+
+<header class="bar"><a href="#home" class="script" data-t="mono" aria-label="Home"></a>
+  <nav class="links" aria-label="Sections"></nav><button id="lang" class="langbtn" type="button"></button><button id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span></button></header>
+<div id="menu" class="menu" hidden><p class="script" data-t="names"></p><nav></nav></div>
+
+<main>
+<section id="home" class="hero"><img class="bot tl" src="images/corner-tl.png" alt=""><img class="bot tr" src="images/corner-tr.png" alt=""><img class="bot bl" src="images/corner-br.png" alt=""><img class="bot br" src="images/corner-br.png" alt="">
+  <div class="invite"><div class="inner-line"></div>
+    <p class="eyebrow rv" data-t="invite"></p>
+    <div class="arch rv"><img data-img="hero" alt=""></div>
+    <h1 class="script rv" data-t="names"></h1>
+    <p class="date rv" data-t="shortDate"></p><p class="loc rv" data-t="venueShort"></p><div class="divider rv"></div></div></section>
+
+<section class="sec tight"><p class="eyebrow rv" data-t="forever"></p>
+  <div class="count rv" role="timer" aria-label="Countdown to the wedding"></div></section>
+
+<section class="sec couple"><img class="garland rv" src="images/garland.png" alt=""><figure class="cutout rv"><img src="images/couple-chair.png" alt=""></figure></section>
+
+<section id="story" class="sec"><p class="eyebrow rv" data-t="coupleEy"></p><h2 class="rv" data-t="storyT"></h2>
+  <p class="lead rv" data-t="lead"></p>
+  <ol class="timeline" id="timeline"></ol></section>
+
+<section id="event" class="sec"><p class="eyebrow rv" data-t="weddingDate"></p><h2 class="rv" data-t="dayT"></h2>
+  <div class="event rv"><p class="eyebrow" data-t="ceremony"></p><p class="big" data-t="venue"></p>
+    <p class="time" data-t="ceremonyTime"></p><p class="muted" data-t="weekday"></p><p class="muted" data-t="address"></p></div></section>
+
+<section class="sec gallery"><p class="eyebrow rv" data-t="moments"></p><h2 class="rv" data-t="together"></h2><div class="grid" id="gallery"></div></section>
+
+<section id="location" class="sec"><p class="eyebrow rv" data-t="where"></p><h2 class="rv" data-t="venue"></h2>
+  <div class="map rv" id="mapBox"></div>
+  <p class="muted rv" data-t="address"></p><p class="muted rv" data-t="blurb"></p>
+  <a id="mapLink" class="btn rv" target="_blank" rel="noopener"><span data-t="openMaps"></span> ↗</a></section>
+
+<section class="sec tight"><img class="bot side" src="images/sprig.png" alt=""><p class="eyebrow rv" data-t="dressEy"></p><h2 class="rv" data-t="dressCode"></h2><p class="muted rv" data-t="dressNote"></p></section>
+
+<section id="rsvp" class="sec rsvp"><img class="bot rtl" src="images/corner-tl.png" alt=""><img class="bot rbr" src="images/corner-br.png" alt="">
+  <div class="divider rv"></div><h2 class="rv" data-t="rsvpT"></h2>
+  <form id="rsvpForm" class="form rv" novalidate>
+    <label><span data-t="fName"></span><input name="name" required autocomplete="name"></label>
+    <label><span data-t="fMsg"></span><textarea name="message" rows="2" required></textarea></label>
+    <fieldset><legend data-t="fAttend"></legend><div class="choice"><button type="button" id="yesBtn" class="pick on" aria-pressed="true" data-t="yes"></button><button type="button" id="noBtn" class="pick" data-t="no"></button></div><p id="dodge" class="dodge" role="status" hidden></p>
+      <div id="joy" class="joy" role="status" hidden><svg class="spark" viewBox="0 0 120 20" fill="none" stroke="currentColor" stroke-width=".9"><path d="M4 10h40M76 10h40"/><path d="M60 2l2.6 6.4L69 10l-6.4 2.6L60 19l-2.6-6.4L51 10l6.4-2.6Z" fill="currentColor"/></svg><p class="script joy-t" id="joyT"></p><p class="joy-s" id="joyS"></p></div></fieldset>
+    <p id="err" class="err" role="alert" hidden></p>
+    <button class="btn" id="send" data-t="confirm"></button></form>
+  <div id="thanks" class="thanks" role="status" hidden><svg viewBox="0 0 60 60" fill="none" stroke="currentColor"><circle cx="30" cy="30" r="27"/><path d="M18 31l8 8 16-17"/></svg><p class="script" id="thanksName"></p><p class="muted" id="thanksMsg"></p></div></section>
+</main>
+
+<footer><img class="garland rv" src="images/garland.png" alt=""><div class="divider rv"></div><p class="eyebrow rv" data-t="closing"></p>
+  <p class="script big-script rv" data-t="names"></p><p class="date rv" data-t="shortDate"></p></footer>
+<canvas id="fx" aria-hidden="true"></canvas>
+<script src="script.js"></script></body></html>
