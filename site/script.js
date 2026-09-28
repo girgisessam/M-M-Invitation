@@ -3,7 +3,7 @@ const weddingConfig = {
   weddingDateISO: "2026-10-06T20:00:00+03:00", // countdown target (Cairo time)
   mapUrl: "https://maps.app.goo.gl/TwH7nxVX6CrpfYK57", // "Open in Maps" link (use a Google "embed" URL to show a live map)
   
-  sheetUrl: "", // paste your Google Apps Script Web App URL here (ends with /exec)
+  sheetUrl: "https://script.google.com/macros/s/AKfycbyzSUZtVFpU27ElEltjBovf1SR6s4OqB_qDQeokjh-RYOQ1oZUiSVpXyAw-N7qeXbg8qA/exec", // paste your Google Apps Script Web App URL here (ends with /exec)
   defaultLang: "en",
   images: { hero: "images/laugh.jpg", gallery: ["images/pool.jpg", "images/cabin.jpg", "images/stairs.jpg"] }
 };
